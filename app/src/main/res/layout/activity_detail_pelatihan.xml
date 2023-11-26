@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailPelatihanActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/top_app"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_back_one"
+                        android:clickable="true"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="@color/darkLighter3Mode"
+                        android:text="Deskripsi Pelatihan"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="20dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_com_pelatihan"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tvRoleJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Semrush"
+                    android:textColor="@color/darkLighter3Mode"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvNameComp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Semrush Academy"
+                    android:textColor="@color/darkLighter3Mode"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tvAddressComp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="USA, 800 Boylston Street, Suite 2475, Boston, MA 02199"
+                    android:textColor="@color/darkLighter3Mode"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_three_pelatihan"
+                    />
+
+                <com.google.android.material.tabs.TabLayout
+                    app:tabIndicatorColor="@color/darkLighter3Mode"
+                    app:tabSelectedTextColor="@color/darkLighter3Mode"
+                    android:id="@+id/tabLayoutLowongan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/vpLowongan"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/fabAction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="50dp"
+                    android:text="Ambil Pelatihan"
+                    app:backgroundTint="@color/darkLighter3Mode"
+                    app:cornerRadius="25dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

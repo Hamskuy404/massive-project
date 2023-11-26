@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item1"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/menu_item2"
+        android:title="Lowongan"
+        android:icon="@drawable/ic_baseline_event_note_24"/>
+
+    <item
+        android:id="@+id/menu_item3"
+        android:title="Pelatihan"
+        android:icon="@drawable/ic_check"/>
+
+    <item
+        android:id="@+id/menu_item4"
+        android:title="Karir"
+        android:icon="@drawable/ic_increase"/>
+
+    <item
+        android:id="@+id/menu_item5"
+        android:title="Profil"
+        android:icon="@drawable/ic_person"/>
+
+
+    <!-- Add more items as needed -->
+
+</menu>

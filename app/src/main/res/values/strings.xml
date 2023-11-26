@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">JobFinderApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_job_desc">Deskripsi Pekerjaan : </string>
+    <string name="title_job_req">Persyaratan Pekerjaan : </string>
+
+    <string name="body_job_desc">
+        <p><b>Tingkatkan karir Anda sebagai Marketing Manager bersama kami!</b> Kami mencari individu berpengalaman dengan:</p>
+
+        <ul>
+            <li>Pengembangan dan pelaksanaan strategi pemasaran efektif.</li>
+            <li>Meningkatkan brand awareness dan mengelola pertumbuhan penjualan.</li>
+            <li>Kolaborasi dengan tim kreatif untuk materi pemasaran yang menarik.</li>
+            <li>Analisis pasar untuk memahami tren dan peluang.</li>
+            <li>Kepemimpinan dalam menjalankan kampanye melalui saluran digital dan media sosial.</li>
+        </ul>
+
+        <p>Kandidat sukses akan memiliki Pengetahuan mendalam tentang pemasaran.Kemampuan analisis yang baik.Kepemimpinan yang kuat.Jika Anda bersemangat membawa brand ke tingkat berikutnya, kirimkan lamaran sekarang!</p>
+    </string>
+
+</resources>

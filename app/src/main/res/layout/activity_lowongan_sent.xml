@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".AmbilLowonganActivity">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +32,9 @@
             android:layout_height="68dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/logo_perusahaan_pt_sangkala"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:outlineSpotShadowColor="#0C3640"
+            android:outlineAmbientShadowColor="#0C3640"/>
 
         <TextView
             android:id="@+id/tvRoleJob"
@@ -77,9 +77,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Dokumen Tambahan \n *Diisi jika ada resume atau dokumen pendukung lain"
+            android:text="Lamaran Berhasil Dikirim! \n Proses Lamaran akan diinfokan melalui notifikasi."
             android:textColor="@color/darkblue"
-            android:textSize="16sp" />
+            android:autoSizeTextType="uniform"
+            android:autoSizeStepGranularity="2sp"/>
 
         <Button
             android:layout_width="248dp"
@@ -97,16 +98,16 @@
         android:layout_marginBottom="82dp">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_kirimlamaran"
+            android:id="@+id/btn_editlamaran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginHorizontal="48dp"
-            android:text="Kirim Lamaran"
+            android:text="@string/edit_dokumen_tambahan"
             android:textAllCaps="false"
             android:fontFamily="@font/poppins_semibold"
             android:textSize="14sp"
-            app:backgroundTint="#0CB9F2"
+            app:backgroundTint="#D9BC2B"
             app:cornerRadius="12dp" />
     </RelativeLayout>
 

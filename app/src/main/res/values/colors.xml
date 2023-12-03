@@ -18,4 +18,6 @@
     <color name="blue3Mode">#FFDEF9FF</color>
     <color name="whiteMode">#FFFEFFFF</color>
     #154752
+    <color name="bluetint">#EBF2F5</color>
+    <color name="darkblue">#154752</color>
 </resources>

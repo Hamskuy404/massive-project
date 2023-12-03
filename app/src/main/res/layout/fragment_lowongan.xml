@@ -9,11 +9,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="144dp"
             android:background="@drawable/top_app_home"
             >
             <LinearLayout
@@ -35,8 +35,9 @@
                         android:layout_weight="2"
                         android:fontFamily="@font/poppins_bold"
                         android:textSize="24sp"
+                        android:textAlignment="center"
                         android:textColor="@color/darkLighter3Mode"
-                        android:text="App Title" />
+                        android:text="Karier.id" />
 
                     <ImageView
                         android:id="@+id/notifBtn"
@@ -55,9 +56,6 @@
                     app:searchIcon="@android:color/transparent"
                     app:iconifiedByDefault="false"/>
 
-
-
-
             </LinearLayout>
         </RelativeLayout>
         <LinearLayout
@@ -67,16 +65,18 @@
             android:layout_marginTop="16dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="82dp"
-                android:layout_height="64dp"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/ic_filter"
-                />
+                android:layout_marginStart="26dp"
+                android:background="@drawable/ic_filter" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" />
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"/>
         </LinearLayout>
 
 
@@ -85,7 +85,9 @@
             android:id="@+id/recyclerViewVertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
     </LinearLayout>
 
 

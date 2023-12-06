@@ -14,7 +14,7 @@ class RegisterTwoActivity : AppCompatActivity() {
         val txtLogin = findViewById<TextView>(R.id.txtLogin)
 
         txtLogin.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, MainHomeActivity::class.java)
             startActivity(intent)
         }
     }

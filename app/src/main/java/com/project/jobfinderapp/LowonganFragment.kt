@@ -16,7 +16,6 @@ class LowonganFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_lowongan, container, false)
@@ -29,7 +28,7 @@ class LowonganFragment : Fragment() {
         }
         val recyclerViewHorizontal: RecyclerView = view.findViewById(R.id.recyclerViewHorizontal)
         val horizontalAdapter = RecyclerViewHomeHorizontalAdapter(
-            listOf("Teknik", "Marketing", "Manajemen", "Farmasi", "Mandarin", "English")
+            listOf("Teknik", "Marketing", "Teknologi", "Farmasi", "Mandarin", "English")
         )
         horizontalAdapter.setOnItemClickListener(object : RecyclerViewHomeHorizontalAdapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
@@ -42,9 +41,9 @@ class LowonganFragment : Fragment() {
         val recyclerViewVertical: RecyclerView = view.findViewById(R.id.recyclerViewVertical)
         val verticalAdapter = RecyclerViewHomeVertical(
             listOf(
-                DataModel("Marketing Manager", "PT. Sangkala Jaya Abadi", "Samarinda Seberang, Samarinda, Kalimantan Timur"),
-                DataModel("Ahli Teknik Produksi", "PT. Cahaya Bhakti Sentosaraya", "Kemayoran, Jakarta Utara"),
-                DataModel("Internal Audit", "PT. Royal Nusa Persada", "Tangerang Banten"),
+                DataModel("Teknik", "PT. Teknik Jaya", "Jakarta"),
+                DataModel("Marketing", "PT. Marketing Sukses", "Surabaya"),
+                DataModel("Teknologi", "PT. Techno Mandiri", "Bandung"),
                 DataModel("Farmasi", "PT. Farmasi Sehat", "Yogyakarta"),
                 DataModel("Mandarin", "PT. Mandarin Language", "Beijing"),
                 DataModel("English", "PT. English Experts", "London")
@@ -54,7 +53,7 @@ class LowonganFragment : Fragment() {
         recyclerViewVertical.adapter = verticalAdapter
         verticalAdapter.setOnItemClickListener(object : OnItemClickListener{
             override fun onItemClick(position: Int) {
-                val intent = Intent(context, LowonganFragment::class.java)
+                val intent = Intent(context, DetailLowonganActivity::class.java)
                 startActivity(intent)
             }
         })

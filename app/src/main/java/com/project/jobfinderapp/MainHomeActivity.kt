@@ -16,20 +16,25 @@ class MainHomeActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.menu_item1 -> {
                     // Handle item 1 selection
-                    loadFragment(LowonganFragment())
+                    loadFragment(HomeFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.menu_item2 -> {
                     // Handle item 2 selection
-                    loadFragment(PelatihanFragment())
+                    loadFragment(LowonganFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.menu_item3 -> {
                     // Handle item 2 selection
-                    loadFragment(KarirFragment())
+                    loadFragment(PelatihanFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.menu_item4 -> {
+                    // Handle item 2 selection
+                    loadFragment(KarirFragment())
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.menu_item5 -> {
                     // Handle item 2 selection
                     loadFragment(ProfilFragment())
                     return@setOnNavigationItemSelectedListener true

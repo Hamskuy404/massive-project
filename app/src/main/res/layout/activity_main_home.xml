@@ -13,10 +13,10 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="35dp"
             android:layout_marginEnd="35dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/menu"
-            app:labelVisibilityMode=""
             app:itemIconTint="@color/darkLighter3Mode"
+            android:padding="4dp"
             app:itemTextColor="@color/darkLighter3Mode"
             app:menu="@menu/bottom_nav_menu" />
 

@@ -14,21 +14,22 @@ data class DataModel2(
     val companyAddress: String
 )
 
-interface  OnItemClickListener{
+interface  OnItemClickListener2{
     fun onItemClick(position: Int)
 }
 
 data class RecyclerViewAppliedVertical(private val dataList: List<DataModel2>) :
     RecyclerView.Adapter<RecyclerViewAppliedVertical.ViewHolder>() {
-    private var onItemClickListener: OnItemClickListener? = null
 
-    fun setOnItemClickListener(listener: OnItemClickListener){
+    private var onItemClickListener: OnItemClickListener2? = null
+
+    fun setOnItemClickListener(listener: OnItemClickListener2){
         this.onItemClickListener = listener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_vertical, parent, false)
+            .inflate(R.layout.vertical_applied, parent, false)
         return ViewHolder(view)
     }
 
@@ -50,7 +51,7 @@ data class RecyclerViewAppliedVertical(private val dataList: List<DataModel2>) :
         private val tvCompanyName: TextView = itemView.findViewById(R.id.tvNameComp)
         private val tvCompanyAddress: TextView = itemView.findViewById(R.id.tvAddressComp)
 
-        fun bind(item: DataModel) {
+        fun bind(item: DataModel2) {
             // Bind data to views
             company.setImageResource(item.company)
             tvJobRole.text = item.jobRole

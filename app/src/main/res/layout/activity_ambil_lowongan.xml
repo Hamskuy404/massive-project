@@ -7,7 +7,6 @@
     android:orientation="vertical"
     tools:context=".AmbilLowonganActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +14,7 @@
         android:layout_marginHorizontal="28dp"
         android:orientation="horizontal" >
         <ImageView
-            android:id="@+id/btn_back"
+            android:id="@+id/btn_backAmbil"
             android:focusable="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -29,12 +28,21 @@
         android:gravity="center"
         android:layout_marginHorizontal="20dp">
 
-        <ImageView
-            android:layout_width="68dp"
-            android:layout_height="68dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/logo_perusahaan_pt_sangkala"
-            android:layout_gravity="center" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="85dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="35dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="25dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_company"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/tvRoleJob"
@@ -67,7 +75,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="500dp"
         android:layout_gravity="center"
         android:layout_margin="32dp"
         android:layout_marginHorizontal="20dp"
@@ -75,39 +83,47 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="20dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Dokumen Tambahan \n *Diisi jika ada resume atau dokumen pendukung lain"
+            android:text="Dokumen Tambahan"
             android:textColor="@color/darkblue"
             android:textSize="16sp" />
 
-        <Button
-            android:layout_width="248dp"
-            android:layout_height="248dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#EBF2F5"
-            app:cornerRadius="12dp"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="82dp">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_kirimlamaran"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginHorizontal="48dp"
-            android:text="Kirim Lamaran"
-            android:textAllCaps="false"
+            android:layout_height="20dp"
             android:fontFamily="@font/poppins_semibold"
-            android:textSize="14sp"
-            app:backgroundTint="#0CB9F2"
-            app:cornerRadius="12dp" />
-    </RelativeLayout>
+            android:text="*Diisi jika ada resume atau dokumen pendukung lain"
+            android:textColor="@color/darkblue"
+            android:textSize="10sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="288dp"
+            android:layout_height="288dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#80EBF2F5"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_gravity="center"
+                android:src="@drawable/upload_file" />
+        </androidx.cardview.widget.CardView>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_kirimlamaran"
+                android:layout_width="345dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="85dp"
+                android:layout_gravity="center"
+                android:text="Kirim Lamaran"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="14sp"
+                app:backgroundTint="#0CB9F2"
+                app:cornerRadius="12dp" />
+    </LinearLayout>
 
 </LinearLayout>

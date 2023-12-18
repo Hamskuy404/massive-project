@@ -1,14 +1,14 @@
 package com.project.jobfinderapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageView
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.tabs.TabLayout
 
 class DetailLowonganActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,9 +18,11 @@ class DetailLowonganActivity : AppCompatActivity() {
         val vp2 = findViewById<ViewPager2>(R.id.vpLowongan)
         val backBtn = findViewById<ImageView>(R.id.back_btn)
 
+        val btn_LamarKerja = findViewById<MaterialButton>(R.id.btn_lamarkerja)
+
         // Set a click listener for the back button
         backBtn.setOnClickListener {
-            onBackPressed()
+            onBackPressedDispatcher.onBackPressed()
         }
 
         tabLayout.addTab(tabLayout.newTab().setText("Deskripsi"))
@@ -51,6 +53,9 @@ class DetailLowonganActivity : AppCompatActivity() {
             }
         })
 
-
+        btn_LamarKerja.setOnClickListener {
+            val intent = Intent(this, AmbilLowonganActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

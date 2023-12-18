@@ -28,10 +28,10 @@ class LowonganFragment : Fragment() {
             startActivity(intent)
         }
         val recyclerViewHorizontal: RecyclerView = view.findViewById(R.id.recyclerViewHorizontal)
-        val horizontalAdapter = RecyclerViewHomeHorizontalAdapter(
+        val horizontalAdapter = RecyclerViewHorizontalAdapter(
             listOf("Teknik", "Marketing", "Manajemen", "Farmasi", "Mandarin", "English")
         )
-        horizontalAdapter.setOnItemClickListener(object : RecyclerViewHomeHorizontalAdapter.OnItemClickListener {
+        horizontalAdapter.setOnItemClickListener(object : RecyclerViewHorizontalAdapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
             }
         })
@@ -40,21 +40,19 @@ class LowonganFragment : Fragment() {
         recyclerViewHorizontal.adapter = horizontalAdapter
 
         val recyclerViewVertical: RecyclerView = view.findViewById(R.id.recyclerViewVertical)
-        val verticalAdapter = RecyclerViewHomeVertical(
+        val verticalAdapter = RecyclerViewVertical(
             listOf(
-                DataModel("Marketing Manager", "PT. Sangkala Jaya Abadi", "Samarinda Seberang, Samarinda, Kalimantan Timur"),
-                DataModel("Ahli Teknik Produksi", "PT. Cahaya Bhakti Sentosaraya", "Kemayoran, Jakarta Utara"),
-                DataModel("Internal Audit", "PT. Royal Nusa Persada", "Tangerang Banten"),
-                DataModel("Farmasi", "PT. Farmasi Sehat", "Yogyakarta"),
-                DataModel("Mandarin", "PT. Mandarin Language", "Beijing"),
-                DataModel("English", "PT. English Experts", "London")
+                DataModel(R.drawable.logo_perusahaan_pt_sangkala,"Marketing Manager", "PT. Sangkala Jaya Abadi", "Samarinda Seberang, Samarinda, Kalimantan Timur"),
+                DataModel(R.drawable.logo_pt_cahayabhakti,"Ahli Teknik Produksi", "PT. Cahaya Bhakti Sentosaraya", "Kemayoran, Jakarta Utara"),
+                DataModel(R.drawable.logo_perusahaan_royalnusa,"Internal Audit", "PT. Royal Nusa Persada", "Tangerang Banten"),
+
             )
         )
         recyclerViewVertical.layoutManager = LinearLayoutManager(context)
         recyclerViewVertical.adapter = verticalAdapter
         verticalAdapter.setOnItemClickListener(object : OnItemClickListener{
             override fun onItemClick(position: Int) {
-                val intent = Intent(context, LowonganFragment::class.java)
+                val intent = Intent(context, DetailLowonganActivity::class.java)
                 startActivity(intent)
             }
         })

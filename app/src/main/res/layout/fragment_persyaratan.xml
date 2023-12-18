@@ -9,21 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_bold"
-            android:text="@string/title_job_req"
-            android:textColor="@color/darkLighter3Mode"
-            android:textSize="16sp"/>
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:background="@drawable/ic_persyaratan"
-            />
+            android:layout_width="340dp"
+            android:layout_height="535dp"
+            android:background="@drawable/ic_persyaratan" />
     </LinearLayout>
-
 
 </FrameLayout>

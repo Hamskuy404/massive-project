@@ -17,7 +17,7 @@ class DetailPelatihanActivity : AppCompatActivity() {
 
         // Set a click listener for the back button
         backBtn.setOnClickListener {
-            onBackPressed()
+            onBackPressedDispatcher.onBackPressed()
         }
 
         tabLayout.addTab(tabLayout.newTab().setText("Deskripsi"))

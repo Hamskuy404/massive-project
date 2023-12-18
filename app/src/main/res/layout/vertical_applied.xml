@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView android:id="@+id/imageViewHorizontal"
+    android:layout_height="100dp"
+    android:layout_width="370dp"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="10dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/company"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/ic_company" />
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRoleJob"
+                android:layout_width="124dp"
+                android:layout_height="18dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Marketing Manager"
+                android:textColor="@color/darkLighter3Mode"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvNameComp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="PT. Sangkala Jaya Abadi"
+                android:textColor="@color/darkLighter3Mode"
+                android:textSize="8sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/tvAddressComp"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Samarinda Seberang, Samarinda, Kalimantan Timur"
+                    android:textColor="@color/darkLighter3Mode"
+                    android:textSize="8sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="56dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+        
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/ic_duration" />
+
+                <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/ic_diproses" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -26,10 +26,10 @@ class PelatihanFragment : Fragment() {
             startActivity(intent)
         }
         val recyclerViewHorizontal: RecyclerView = view.findViewById(R.id.recyclerViewHorizontal)
-        val horizontalAdapter = RecyclerViewHomeHorizontalAdapter(
+        val horizontalAdapter = RecyclerViewHorizontalAdapter(
             listOf("Semua","Teknik", "Marketing", "Teknologi", "Farmasi", "Mandarin", "English")
         )
-        horizontalAdapter.setOnItemClickListener(object : RecyclerViewHomeHorizontalAdapter.OnItemClickListener {
+        horizontalAdapter.setOnItemClickListener(object : RecyclerViewHorizontalAdapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
             }
         })

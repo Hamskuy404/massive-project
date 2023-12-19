@@ -7,7 +7,9 @@ import android.widget.ImageView
 import com.google.android.material.button.MaterialButton
 
 
+
 class AmbilLowonganActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ambil_lowongan)

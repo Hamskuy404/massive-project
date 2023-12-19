@@ -105,11 +105,15 @@
             app:cardBackgroundColor="#80EBF2F5"
             android:layout_gravity="center">
 
-            <ImageView
+            <Button
+                android:id="@+id/btn_uploud"
                 android:layout_width="81dp"
                 android:layout_height="81dp"
                 android:layout_gravity="center"
-                android:src="@drawable/upload_file" />
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:foreground="@drawable/upload_file" />
+
         </androidx.cardview.widget.CardView>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_kirimlamaran"

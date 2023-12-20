@@ -19,5 +19,8 @@
         <p>Kandidat sukses akan memiliki Pengetahuan mendalam tentang pemasaran.Kemampuan analisis yang baik.Kepemimpinan yang kuat.Jika Anda bersemangat membawa brand ke tingkat berikutnya, kirimkan lamaran sekarang!</p>
     </string>
     <string name="edit_dokumen_tambahan">Edit Dokumen Tambahan</string>
+    <string name="default_web_client_id" />
+    <string name="success_message">Your file was successfuly uploaded</string>
+    <string name="error_message">Error! Your file wasn\'t uploaded. Try again</string>
 
 </resources>

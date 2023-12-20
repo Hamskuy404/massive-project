@@ -1,8 +1,10 @@
 package com.project.jobfinderapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
@@ -17,6 +19,12 @@ class DetailLowonganActivity : AppCompatActivity() {
         val tabLayout  = findViewById<TabLayout>(R.id.tabLayoutLowongan)
         val vp2 = findViewById<ViewPager2>(R.id.vpLowongan)
         val backBtn = findViewById<ImageView>(R.id.back_btn)
+        val btnAmbilLowongan = findViewById<Button>(R.id.btn_ambilLowongan)
+
+        btnAmbilLowongan.setOnClickListener {
+            val intent = Intent(this, AmbilLowonganActivity::class.java)
+            startActivity(intent)
+        }
 
         // Set a click listener for the back button
         backBtn.setOnClickListener {

@@ -1,8 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-}
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
 
+}
+apply plugin: 'com.google.gms.google-services'
 android {
     namespace 'com.project.jobfinderapp'
     compileSdk 33
@@ -27,6 +30,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    viewBinding {
+        enabled = true
+    }
+    dataBinding {
+        enabled = true
+    }
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -44,10 +53,19 @@ dependencies {
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
 
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation("com.google.firebase:firebase-analytics-ktx")
+
     // Add the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-auth-ktx")
 
     // Also add the dependency for the Google Play services library and specify its version
     implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+
 }

@@ -15,6 +15,7 @@ class DetailPelatihanActivity : AppCompatActivity() {
         val vp2 = findViewById<ViewPager2>(R.id.vpLowongan)
         val backBtn = findViewById<ImageView>(R.id.back_btn)
 
+
         // Set a click listener for the back button
         backBtn.setOnClickListener {
             onBackPressed()

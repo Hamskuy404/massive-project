@@ -82,6 +82,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/btn_upload_pdf"
             android:layout_width="248dp"
             android:layout_height="248dp"
             android:layout_gravity="center"

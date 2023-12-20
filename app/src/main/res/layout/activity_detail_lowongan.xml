@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp">
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/fabAction"
+                    android:id="@+id/btn_ambilLowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"

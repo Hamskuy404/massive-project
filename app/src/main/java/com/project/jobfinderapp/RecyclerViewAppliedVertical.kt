@@ -7,7 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-data class DataModel(
+data class DataModel2(
+    val company: Int,
     val jobRole: String,
     val companyName: String,
     val companyAddress: String
@@ -17,9 +18,8 @@ interface  OnItemClickListener{
     fun onItemClick(position: Int)
 }
 
-class RecyclerViewHomeVertical(private val dataList: List<DataModel>) :
-    RecyclerView.Adapter<RecyclerViewHomeVertical.ViewHolder>() {
-
+data class RecyclerViewAppliedVertical(private val dataList: List<DataModel2>) :
+    RecyclerView.Adapter<RecyclerViewAppliedVertical.ViewHolder>() {
     private var onItemClickListener: OnItemClickListener? = null
 
     fun setOnItemClickListener(listener: OnItemClickListener){
@@ -36,9 +36,8 @@ class RecyclerViewHomeVertical(private val dataList: List<DataModel>) :
         val item = dataList[position]
         holder.bind(item)
 
-        holder.itemView.setOnClickListener {
-            onItemClickListener?.onItemClick(position)
-        }
+
+        holder.itemView.setOnClickListener { onItemClickListener?.onItemClick(position) }
     }
 
     override fun getItemCount(): Int {
@@ -46,12 +45,14 @@ class RecyclerViewHomeVertical(private val dataList: List<DataModel>) :
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val company : ImageView = itemView.findViewById(R.id.company)
         private val tvJobRole: TextView = itemView.findViewById(R.id.tvRoleJob)
         private val tvCompanyName: TextView = itemView.findViewById(R.id.tvNameComp)
         private val tvCompanyAddress: TextView = itemView.findViewById(R.id.tvAddressComp)
 
         fun bind(item: DataModel) {
             // Bind data to views
+            company.setImageResource(item.company)
             tvJobRole.text = item.jobRole
             tvCompanyName.text = item.companyName
             tvCompanyAddress.text = item.companyAddress

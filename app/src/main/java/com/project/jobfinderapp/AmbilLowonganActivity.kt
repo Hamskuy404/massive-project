@@ -1,8 +1,8 @@
-package com.example.massiveproject
+package com.project.jobfinderapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.project.jobfinderapp.R
+
 
 class AmbilLowonganActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

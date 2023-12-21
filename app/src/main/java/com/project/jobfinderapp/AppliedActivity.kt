@@ -11,30 +11,30 @@ class AppliedActivity : AppCompatActivity() {
         setContentView(R.layout.activity_applied)
         val bottom_nav = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
-        bottom_nav.setOnNavigationItemSelectedListener { menuItem ->
+        bottom_nav.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.menu_item1 -> {
                     // Handle item 1 selection
                     loadFragment(LowonganAppliedFragment())
-                    return@setOnNavigationItemSelectedListener true
+                    return@setOnItemSelectedListener true
                 }
                 R.id.menu_item2 -> {
                     // Handle item 2 selection
                     loadFragment(PelatihanFragment())
-                    return@setOnNavigationItemSelectedListener true
+                    return@setOnItemSelectedListener true
                 }
                 R.id.menu_item3 -> {
                     // Handle item 2 selection
                     loadFragment(KarirFragment())
-                    return@setOnNavigationItemSelectedListener true
+                    return@setOnItemSelectedListener true
                 }
                 R.id.menu_item4 -> {
                     // Handle item 2 selection
                     loadFragment(ProfilFragment())
-                    return@setOnNavigationItemSelectedListener true
+                    return@setOnItemSelectedListener true
                 }
                 // Add more cases for other items as needed
-                else -> return@setOnNavigationItemSelectedListener false
+                else -> return@setOnItemSelectedListener false
             }
         }
 

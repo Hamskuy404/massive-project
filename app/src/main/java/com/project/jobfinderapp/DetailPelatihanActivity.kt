@@ -1,9 +1,11 @@
 package com.project.jobfinderapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.tabs.TabLayout
 
 class DetailPelatihanActivity : AppCompatActivity() {
@@ -14,6 +16,8 @@ class DetailPelatihanActivity : AppCompatActivity() {
         val tabLayout  = findViewById<TabLayout>(R.id.tabLayoutLowongan)
         val vp2 = findViewById<ViewPager2>(R.id.vpLowongan)
         val backBtn = findViewById<ImageView>(R.id.back_btn)
+        val btn_PilihKelas = findViewById<MaterialButton>(R.id.btn_pilihkelas)
+
 
         // Set a click listener for the back button
         backBtn.setOnClickListener {
@@ -47,6 +51,12 @@ class DetailPelatihanActivity : AppCompatActivity() {
                 super.onPageSelected(position)
             }
         })
+
+        btn_PilihKelas.setOnClickListener {
+            val intent = Intent(applicationContext, KelasActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

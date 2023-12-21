@@ -28,11 +28,6 @@ class AppliedActivity : AppCompatActivity() {
                     loadFragment(KarirFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.menu_item4 -> {
-                    // Handle item 2 selection
-                    loadFragment(ProfilFragment())
-                    return@setOnNavigationItemSelectedListener true
-                }
                 // Add more cases for other items as needed
                 else -> return@setOnNavigationItemSelectedListener false
             }

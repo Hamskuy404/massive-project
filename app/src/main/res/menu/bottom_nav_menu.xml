@@ -11,14 +11,8 @@
         android:id="@+id/menu_item2"
         android:title="Pelatihan"
         android:icon="@drawable/ic_check"/>
-
     <item
         android:id="@+id/menu_item3"
-        android:title="Karir"
-        android:icon="@drawable/ic_increase"/>
-
-    <item
-        android:id="@+id/menu_item4"
         android:title="Profil"
         android:icon="@drawable/ic_person"/>
 

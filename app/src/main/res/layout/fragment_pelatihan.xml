@@ -32,9 +32,10 @@
                         android:layout_height="match_parent"
                         android:layout_weight="2"
                         android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
                         android:textSize="24sp"
                         android:textColor="@color/darkLighter3Mode"
-                        android:text="App Title" />
+                        android:text="Karier.id" />
 
                     <ImageView
                         android:id="@+id/notifBtn"

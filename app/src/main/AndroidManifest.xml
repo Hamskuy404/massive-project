@@ -13,10 +13,16 @@
         android:theme="@style/Theme.JobFinderApp"
         tools:targetApi="31">
         <activity
-            android:name=".AppliedActivity"
+            android:name=".MateriPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".LowonganAppliedActivity"
+            android:name=".KelasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppliedActivity"
             android:exported="false" />
         <activity
             android:name=".DeskripsiAppliedActivity"
@@ -60,7 +66,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".RegisterOneActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -73,9 +79,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".RegisterOneActivity"
-            android:exported="true">
+            <activity
+                android:name=".LoginActivity"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -88,7 +94,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

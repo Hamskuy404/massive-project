@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MateriPelatihanActivity">
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrow_back_one"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/progress_materi"
+        android:layout_margin="20dp"
+        />
+    <ImageView
+        android:id="@+id/btn_course"
+        android:layout_width="wrap_content"
+        android:layout_height="550dp"
+        android:background="@drawable/list_materi"
+        />
+</LinearLayout>

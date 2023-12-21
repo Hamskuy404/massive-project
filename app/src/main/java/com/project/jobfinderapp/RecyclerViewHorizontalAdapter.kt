@@ -3,13 +3,12 @@ package com.project.jobfinderapp
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewHomeHorizontalAdapter(private val dataList: List<String>) :
-    RecyclerView.Adapter<RecyclerViewHomeHorizontalAdapter.ViewHolder>() {
+class RecyclerViewHorizontalAdapter(private val dataList: List<String>) :
+    RecyclerView.Adapter<RecyclerViewHorizontalAdapter.ViewHolder>() {
 
     private var selectedPosition = RecyclerView.NO_POSITION
 

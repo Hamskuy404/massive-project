@@ -1,9 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DeskripsiAppliedActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/top_app">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/back_btndesk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_back_one"
+                        android:clickable="true" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="@color/darkLighter3Mode"
+                        android:text="Deskripsi Lowongan" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="85dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="35dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="25dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_company" />
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="56dp"
+                            android:layout_marginStart="69dp"
+                            android:background="@drawable/status_applied"/>
+                    </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvRoleJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Marketing Manager"
+                    android:textColor="@color/darkLighter3Mode"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tvNameComp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="PT. Sangkala Jaya Abadi"
+                    android:textColor="@color/darkLighter3Mode"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tvAddressComp"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Samarinda Seberang, Samarinda, Kalimantan Timur"
+                    android:textColor="@color/darkLighter3Mode"
+                    android:textSize="8sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_three_lowongan" />
+
+                <com.google.android.material.tabs.TabLayout
+                    app:tabIndicatorColor="@color/darkLighter3Mode"
+                    app:tabSelectedTextColor="@color/darkLighter3Mode"
+                    android:id="@+id/tabLayoutLowongan"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/vpLowongan"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_edit_dokumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="48dp"
+                    android:text="Edit Dokumen Tambahan"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="15sp"
+                    app:backgroundTint="#0CB9F2"
+                    app:cornerRadius="12dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

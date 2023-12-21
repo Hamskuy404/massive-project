@@ -5,7 +5,7 @@
     <item
         android:id="@+id/menu_item1"
         android:title="Lowongan"
-        android:icon="@drawable/ic_baseline_assignment_24"/>
+        android:icon="@drawable/ic_assignment"/>
 
     <item
         android:id="@+id/menu_item2"

@@ -18,8 +18,8 @@ interface  OnItemClickListener{
     fun onItemClick(position: Int)
 }
 
-class RecyclerViewHomeVertical(private val dataList: List<DataModel>) :
-    RecyclerView.Adapter<RecyclerViewHomeVertical.ViewHolder>() {
+class RecyclerViewVertical(private val dataList: List<DataModel>) :
+    RecyclerView.Adapter<RecyclerViewVertical.ViewHolder>() {
 
     private var onItemClickListener: OnItemClickListener? = null
 

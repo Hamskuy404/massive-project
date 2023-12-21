@@ -54,7 +54,7 @@ class DeskripsiAppliedActivity : AppCompatActivity() {
         })
 
         btn_EditDokumen.setOnClickListener {
-            val intent = Intent(this, AmbilLowonganActivity2::class.java)
+            val intent = Intent(this, EditDokumenActivity::class.java)
             startActivity(intent)
         }
 

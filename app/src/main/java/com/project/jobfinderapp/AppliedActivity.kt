@@ -25,7 +25,7 @@ class AppliedActivity : AppCompatActivity() {
                 }
                 R.id.menu_item3 -> {
                     // Handle item 2 selection
-                    loadFragment(KarirFragment())
+                    loadFragment(ProfilFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 // Add more cases for other items as needed

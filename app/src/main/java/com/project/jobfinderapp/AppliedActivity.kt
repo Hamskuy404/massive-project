@@ -25,11 +25,6 @@ class AppliedActivity : AppCompatActivity() {
                 }
                 R.id.menu_item3 -> {
                     // Handle item 2 selection
-                    loadFragment(KarirFragment())
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.menu_item4 -> {
-                    // Handle item 2 selection
                     loadFragment(ProfilFragment())
                     return@setOnNavigationItemSelectedListener true
                 }

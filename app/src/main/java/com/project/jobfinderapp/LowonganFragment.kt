@@ -16,6 +16,7 @@ class LowonganFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_lowongan, container, false)
@@ -27,10 +28,10 @@ class LowonganFragment : Fragment() {
             startActivity(intent)
         }
         val recyclerViewHorizontal: RecyclerView = view.findViewById(R.id.recyclerViewHorizontal)
-        val horizontalAdapter = RecyclerViewHomeHorizontalAdapter(
-            listOf("Teknik", "Marketing", "Teknologi", "Farmasi", "Mandarin", "English")
+        val horizontalAdapter = RecyclerViewHorizontalAdapter(
+            listOf("Teknik", "Marketing", "Manajemen", "Farmasi", "Mandarin", "English")
         )
-        horizontalAdapter.setOnItemClickListener(object : RecyclerViewHomeHorizontalAdapter.OnItemClickListener {
+        horizontalAdapter.setOnItemClickListener(object : RecyclerViewHorizontalAdapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
             }
         })
@@ -39,15 +40,13 @@ class LowonganFragment : Fragment() {
         recyclerViewHorizontal.adapter = horizontalAdapter
 
         val recyclerViewVertical: RecyclerView = view.findViewById(R.id.recyclerViewVertical)
-        val verticalAdapter = RecyclerViewHomeVertical(
+        val verticalAdapter = RecyclerViewVertical(
             listOf(
-                DataModel("Teknik", "PT. Teknik Jaya", "Jakarta"),
-                DataModel("Marketing", "PT. Marketing Sukses", "Surabaya"),
-                DataModel("Teknologi", "PT. Techno Mandiri", "Bandung"),
-                DataModel("Farmasi", "PT. Farmasi Sehat", "Yogyakarta"),
-                DataModel("Mandarin", "PT. Mandarin Language", "Beijing"),
-                DataModel("English", "PT. English Experts", "London")
-            )
+                DataModel(R.drawable.logo_perusahaan_pt_sangkala,"Marketing Manager", "PT. Sangkala Jaya Abadi", "Samarinda Seberang, Samarinda, Kalimantan Timur"),
+                DataModel(R.drawable.logo_pt_cahayabhakti,"Ahli Teknik Produksi", "PT. Cahaya Bhakti Sentosaraya", "Kemayoran, Jakarta Utara"),
+                DataModel(R.drawable.logo_perusahaan_royalnusa,"Internal Audit", "PT. Royal Nusa Persada", "Tangerang Banten"),
+
+                )
         )
         recyclerViewVertical.layoutManager = LinearLayoutManager(context)
         recyclerViewVertical.adapter = verticalAdapter

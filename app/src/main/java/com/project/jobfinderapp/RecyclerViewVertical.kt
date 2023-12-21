@@ -62,4 +62,3 @@ class RecyclerViewVertical(private val dataList: List<DataModel>) :
 }
 
 
-

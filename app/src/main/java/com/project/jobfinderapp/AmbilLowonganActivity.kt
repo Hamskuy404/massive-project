@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+/*import com.project.jobfinderapp.databinding.ActivityAmbilLowonganBinding
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -11,21 +12,21 @@ import androidx.lifecycle.ViewModelProvider
 import com.project.jobfinderapp.*
 import com.project.jobfinderapp.data.MainRepository
 import com.project.jobfinderapp.MainHomeActivity
-import com.project.jobfinderapp.R
-import com.project.jobfinderapp.databinding.ActivityAmbilLowonganBinding
+import com.project.jobfinderapp.R*/
+
 
 class AmbilLowonganActivity : AppCompatActivity() {
-
-        private lateinit var viewModel: MainViewModel
-        private lateinit var binding: ActivityAmbilLowonganBinding
-        val btnKirimLamaran = findViewById<Button>(R.id.btn_kirimlamaran)
-
-        override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ambil_lowongan)
+        /*private lateinit var viewModel: MainViewModel
+        private lateinit var binding: ActivityAmbilLowonganBinding*/
+        val btnKirimLamaran = findViewById<Button>(R.id.btn_kirimlamaran)
+
+
 
         btnKirimLamaran.setOnClickListener {
-            val intent = Intent(this, LowonganSentActivity::class.java)
+            val intent = Intent(this, AmbilLowonganActivity2::class.java)
             startActivity(intent)
         }
 

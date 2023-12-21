@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".CourseActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_back_one"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:background="@drawable/video_materi"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="What is content marketing and why is it important?"
+                android:textColor="@color/darkLighter3Mode"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Ringkasan"
+                android:textColor="@color/darkLighter3Mode"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginVertical="10dp"
+                android:text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit cupiditate asperiores vitae est ab aliquam molestias corporis tenetur repellat ipsum?"
+                android:textColor="@color/darkLighter3Mode"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/variant_materi"
+                android:layout_marginVertical="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/materi_one"
+                android:layout_marginVertical="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/materi_two"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
